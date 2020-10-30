@@ -48,6 +48,6 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
     })
 
     //Executar todos os db.runs() do class_schudules
-    await Promise.all(insertedAllClassScheduleValues)
+    await Promise.all(insertedAllClassScheduleValues);
 
 }

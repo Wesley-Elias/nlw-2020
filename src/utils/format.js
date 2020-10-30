@@ -8,7 +8,7 @@ const subjects = [
     "História",
     "Matemática",
     "Português",
-    "Química"
+    "Química",
 ]
 
 const weekdays = [
@@ -21,15 +21,13 @@ const weekdays = [
     "Sábado"
 ]
 
-// Funcionalidades
-
 function getSubject(subjectNumber){
-    const position = +subjectNumber -1
+    const position = +subjectNumber - 1
     return subjects[position]
 }
 
-function convertHoursToMinutes(time) {
-    const [hour, minutes] = time.split(":")
+function convertHoursToMinutes(time){
+    const [ hour, minutes ] = time.split(":")
     return Number((hour * 60) + minutes)
 }
 
